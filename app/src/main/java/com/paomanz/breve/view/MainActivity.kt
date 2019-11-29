@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         /*setContentView(R.layout.activity_main)*/
->>>>>>> dev2
 
         //Set 'Up Arrow' in Appbar
         mainNavController = Navigation.findNavController(this, R.id.mainNavHostFragment)
