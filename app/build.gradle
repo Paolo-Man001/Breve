@@ -4,8 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-// Non-default plugins:
 
+// Non-default plugins:
 apply plugin: 'androidx.navigation.safeargs'    // Adding the apply plugin statement for safe-args
 
 apply plugin: 'kotlin-kapt'     // plugin needed for data-binding, navigation and etc

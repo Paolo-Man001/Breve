@@ -20,17 +20,24 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(
-            inflater, R.layout.fragment_login, container, false)
+            inflater, R.layout.fragment_login, container, false
+        )
 
-          binding.apply {
-              buttonLoginLogin.setOnClickListener {
-                  Toast.makeText(context, "Login Button Clicked!", Toast.LENGTH_SHORT).show()
-              }
+        /*SAFE-ARGS:
+        * Extract the SafeArg value(dummyEmail) from MainFragment's Direction class's argument
+        */
+        val args = LoginFragmentArgs.fromBundle(arguments!!)
+        Toast.makeText(context,"Email from MainFragment: ${args.email}",Toast.LENGTH_SHORT).show()
 
-              textViewSignUpLogin.setOnClickListener {
-                  it.findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
-              }
-          }
+        binding.apply {
+            buttonLoginLogin.setOnClickListener {
+                Toast.makeText(context, "Login Button Clicked!", Toast.LENGTH_SHORT).show()
+            }
+
+            textViewSignUpLogin.setOnClickListener {
+                it.findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            }
+        }
 
         return binding.root
     } // End onCreateView

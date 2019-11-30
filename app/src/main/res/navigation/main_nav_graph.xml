@@ -43,6 +43,9 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:launchSingleTop="false"
             app:popUpToInclusive="false" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
