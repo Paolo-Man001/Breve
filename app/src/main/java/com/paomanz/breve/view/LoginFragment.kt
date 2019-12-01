@@ -37,7 +37,9 @@ class LoginFragment : Fragment() {
                 /** Start AccountActivity
                  * */
                 val intent = Intent(context,AccountActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP and Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)
+                activity!!.finish()     // Destroys the MainActivity task
             }
 
             textViewSignUpLogin.setOnClickListener {
