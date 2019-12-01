@@ -48,6 +48,10 @@ dependencies {
     def material_version = "1.0.0"
     implementation "com.google.android.material:material:$material_version"
 
+    // MVVM - ViewModel and LiveData
+    def lifecycle_version = "2.1.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
     // Testing
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
