@@ -6,18 +6,20 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.AccountActivity">
+        tools:context=".view.AccountPostsFragment">
 
-        <fragment
-            android:id="@+id/accountNavHostFragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/account_posts_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:defaultNavHost="true"
+            android:text="Posts"
+            android:textSize="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navGraph="@navigation/account_nav_graph"/>
+            app:layout_constraintVertical_bias="0.30" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

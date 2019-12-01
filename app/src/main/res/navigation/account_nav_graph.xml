@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_nav_graph"
+    app:startDestination="@id/accountHomeFragment">
+
+    <fragment
+        android:id="@+id/accountHomeFragment"
+        android:name="com.paomanz.breve.view.AccountHomeFragment"
+        android:label="AccountHomeFragment"
+        tools:layout="@layout/fragment_account_home">
+        <action
+            android:id="@+id/action_accountHome_to_accountProfile"
+            app:destination="@id/accountProfileFragment" />
+        <action
+            android:id="@+id/action_accountHome_to_accountPosts"
+            app:destination="@id/accountPostsFragment" />
+        <action
+            android:id="@+id/action_accountHome_to_accountCompose"
+            app:destination="@id/accountComposeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountProfileFragment"
+        android:name="com.paomanz.breve.view.AccountProfileFragment"
+        android:label="AccountProfileFragment"
+        tools:layout="@layout/fragment_account_profile" />
+    <fragment
+        android:id="@+id/accountPostsFragment"
+        android:name="com.paomanz.breve.view.AccountPostsFragment"
+        android:label="AccountPostsFragment"
+        tools:layout="@layout/fragment_account_posts" />
+    <fragment
+        android:id="@+id/accountComposeFragment"
+        android:name="com.paomanz.breve.view.AccountComposeFragment"
+        android:label="AccountComposeFragment"
+        tools:layout="@layout/fragment_account_compose"/>
+</navigation>
