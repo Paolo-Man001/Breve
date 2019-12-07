@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_accountHome_to_accountCompose"
             app:destination="@id/accountComposeFragment" />
+        <action
+            android:id="@+id/action_accountHome_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountProfileFragment"
@@ -35,4 +38,9 @@
         android:name="com.paomanz.breve.view.AccountComposeFragment"
         android:label="AccountComposeFragment"
         tools:layout="@layout/fragment_account_compose"/>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.paomanz.breve.view.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
 </navigation>

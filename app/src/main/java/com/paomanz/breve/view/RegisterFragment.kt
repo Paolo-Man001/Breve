@@ -12,7 +12,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.FragmentRegisterBinding
-import com.paomanz.breve.modelview.RegistrationViewModel
+import com.paomanz.breve.viewmodel.RegistrationViewModel
 
 
 class RegisterFragment : Fragment() {

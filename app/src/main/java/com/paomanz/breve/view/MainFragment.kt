@@ -48,20 +48,9 @@ class MainFragment : Fragment() {
          }
       }
 
+
       //------------------------------------------------//
       return binding.root // Fragments MUST return this.
    } // End onCreateView
-
-
-   // !!! Without Data-binding, we can only reference our Buttons inside this lifecycle method.
-   /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-       super.onViewCreated(view, savedInstanceState)
-
-       //About Button
-       button_about_main.setOnClickListener {
-           val action = MainFragmentDirections.actionMainFragmentToAboutFragment()
-           Navigation.findNavController(it).navigate(action)
-       }
-   }*/
 
 }

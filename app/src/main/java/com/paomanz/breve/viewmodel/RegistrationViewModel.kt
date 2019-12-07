@@ -1,4 +1,4 @@
-package com.paomanz.breve.modelview
+package com.paomanz.breve.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

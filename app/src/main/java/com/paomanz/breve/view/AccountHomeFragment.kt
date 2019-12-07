@@ -2,12 +2,12 @@ package com.paomanz.breve.view
 
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.FragmentAccountHomeBinding
 
@@ -16,31 +16,46 @@ import com.paomanz.breve.databinding.FragmentAccountHomeBinding
  */
 class AccountHomeFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentAccountHomeBinding>(
-            inflater, R.layout.fragment_account_home, container, false
-        )
+   override fun onCreateView(
+      inflater: LayoutInflater, container: ViewGroup?,
+      savedInstanceState: Bundle?
+   ): View? {
+      // Inflate the layout for this fragment
+      val binding = DataBindingUtil.inflate<FragmentAccountHomeBinding>(
+         inflater, R.layout.fragment_account_home, container, false
+      )
 
-        binding.apply {
-            btnAccProfile.setOnClickListener {
-                findNavController().navigate(R.id.action_accountHome_to_accountProfile)
-            }
+      binding.apply {
+         btnAccProfile.setOnClickListener {
+            findNavController().navigate(R.id.action_accountHome_to_accountProfile)
+         }
 
-            btnAccPosts.setOnClickListener {
-                findNavController().navigate(R.id.action_accountHome_to_accountPosts)
-            }
+         btnAccPosts.setOnClickListener {
+            findNavController().navigate(R.id.action_accountHome_to_accountPosts)
+         }
 
-            btnAccCompose.setOnClickListener {
-                findNavController().navigate(R.id.action_accountHome_to_accountCompose)
-            }
-        }
+         btnAccCompose.setOnClickListener {
+            findNavController().navigate(R.id.action_accountHome_to_accountCompose)
+         }
+      }
 
-        return binding.root
-    }
+      /** Options Menu */
+      setHasOptionsMenu(true)
+
+      return binding.root
+   }
+
+   override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+      super.onCreateOptionsMenu(menu, inflater)
+      inflater.inflate(R.menu.account_options_menu, menu)
+   }
+
+   override fun onOptionsItemSelected(item: MenuItem): Boolean {
+      return NavigationUI.onNavDestinationSelected(
+         item,
+         view!!.findNavController()
+      ) || super.onOptionsItemSelected(item)
+   }
 
 
 }

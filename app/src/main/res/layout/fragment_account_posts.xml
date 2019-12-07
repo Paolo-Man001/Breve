@@ -13,7 +13,7 @@
             android:id="@+id/account_posts_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Posts"
+            android:text="@string/header_posts"
             android:textSize="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
