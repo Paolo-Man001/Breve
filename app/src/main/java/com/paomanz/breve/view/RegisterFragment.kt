@@ -43,9 +43,4 @@ class RegisterFragment : Fragment() {
         return binding.root
     } // End onCreateView
 
-    // Set the App Bar title
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        (activity as AppCompatActivity).supportActionBar?.title = "Register"
-//    }
-
 }

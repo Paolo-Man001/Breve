@@ -1,22 +1,17 @@
 package com.paomanz.breve.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupWithNavController
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.ActivityAccountBinding
-import kotlinx.android.synthetic.main.activity_account.*
+import kotlinx.android.synthetic.main.navigation_header.*
 
 class AccountActivity : AppCompatActivity() {
 
@@ -49,6 +44,7 @@ class AccountActivity : AppCompatActivity() {
       NavigationUI.setupWithNavController(binding.navigationView, accountNavController)
 
    }
+
 
    // Up-Arrow in Appbar
    override fun onSupportNavigateUp(): Boolean {

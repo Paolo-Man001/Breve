@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/accountHomeFragment"
         android:name="com.paomanz.breve.view.AccountHomeFragment"
-        android:label="AccountHomeFragment"
+        android:label="Home"
         tools:layout="@layout/fragment_account_home">
         <action
             android:id="@+id/action_accountHome_to_accountProfile"
@@ -34,21 +34,21 @@
     <fragment
         android:id="@+id/accountProfileFragment"
         android:name="com.paomanz.breve.view.AccountProfileFragment"
-        android:label="AccountProfileFragment"
+        android:label="Profile"
         tools:layout="@layout/fragment_account_profile" />
     <fragment
         android:id="@+id/accountPostsFragment"
         android:name="com.paomanz.breve.view.AccountPostsFragment"
-        android:label="AccountPostsFragment"
+        android:label="Posts"
         tools:layout="@layout/fragment_account_posts" />
     <fragment
         android:id="@+id/accountComposeFragment"
         android:name="com.paomanz.breve.view.AccountComposeFragment"
-        android:label="AccountComposeFragment"
-        tools:layout="@layout/fragment_account_compose"/>
+        android:label="Compose"
+        tools:layout="@layout/fragment_account_compose" />
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.paomanz.breve.view.AboutFragment"
-        android:label="AboutFragment"
-        tools:layout="@layout/fragment_about"/>
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
 </navigation>

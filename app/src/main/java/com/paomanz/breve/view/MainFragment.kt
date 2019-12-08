@@ -28,8 +28,6 @@ class MainFragment : Fragment() {
          inflater, R.layout.fragment_main, container, false
       )
 
-      activity?.title = "Breve"
-
       /*SAFE-ARGS:
       * dummyEmail is the String data we send to LoginFragment for it to use as default in its EditText(email)
       */
@@ -55,9 +53,4 @@ class MainFragment : Fragment() {
       //------------------------------------------------//
       return binding.root // Fragments MUST return this.
    } // End onCreateView
-
-   // Set the App Bar title
-//   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//      (activity as AppCompatActivity).supportActionBar?.title = "Breve"
-//   }
 }

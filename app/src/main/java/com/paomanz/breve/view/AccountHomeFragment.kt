@@ -34,14 +34,9 @@ class AccountHomeFragment : Fragment() {
       /** Options Menu */
       setHasOptionsMenu(true)
 
-
       return binding.root
    }
 
-   // Set the App Bar title
-//   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//      (activity as AppCompatActivity).supportActionBar?.title = "Home"
-//   }
 
    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
       super.onCreateOptionsMenu(menu, inflater)
