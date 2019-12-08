@@ -1,20 +1,14 @@
 package com.paomanz.breve.view
 
 
-import android.app.ActionBar
 import android.os.Bundle
 import android.view.*
-import android.widget.Toolbar
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.onNavDestinationSelected
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.FragmentAccountHomeBinding
-import kotlinx.android.synthetic.main.activity_account.*
 
 /**
  * A simple [Fragment] subclass.

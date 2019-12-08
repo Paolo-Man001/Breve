@@ -7,11 +7,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.ActivityAccountBinding
-import kotlinx.android.synthetic.main.navigation_header.*
 
 class AccountActivity : AppCompatActivity() {
 
