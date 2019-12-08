@@ -19,41 +19,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.24000001" />
+            app:layout_constraintVertical_bias="0.24" />
 
-        <Button
-            android:id="@+id/btn_acc_profile"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Profile"
-            app:layout_constraintBottom_toTopOf="@+id/btn_acc_posts"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/account_home_header"
-            app:layout_constraintVertical_chainStyle="spread" />
-
-        <Button
-            android:id="@+id/btn_acc_posts"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Posts"
-            app:layout_constraintBottom_toTopOf="@+id/btn_acc_compose"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_acc_profile" />
-
-        <Button
-            android:id="@+id/btn_acc_compose"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Compose"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_acc_posts" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

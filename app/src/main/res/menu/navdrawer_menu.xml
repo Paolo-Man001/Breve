@@ -4,14 +4,18 @@
 
     <item
         android:id="@+id/accountHomeFragment"
-        android:title="@string/header_user_home" />
+        android:title="@string/header_user_home"
+        android:icon="@drawable/ic_home_black_24dp"/>
     <item
         android:id="@+id/accountPostsFragment"
-        android:title="@string/header_posts" />
+        android:title="@string/header_posts"
+        android:icon="@drawable/ic_view_list_black_24dp"/>
     <item
         android:id="@+id/accountComposeFragment"
-        android:title="@string/header_compose" />
+        android:title="@string/header_compose"
+        android:icon="@drawable/ic_create_black_24dp"/>
     <item
         android:id="@+id/aboutFragment"
-        android:title="@string/header_about" />
+        android:title="@string/header_about"
+        android:icon="@drawable/ic_info_outline_black_24dp"/>
 </menu>

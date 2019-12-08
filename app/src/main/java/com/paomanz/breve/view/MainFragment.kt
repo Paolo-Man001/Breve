@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.paomanz.breve.R
@@ -26,6 +27,8 @@ class MainFragment : Fragment() {
       val binding = DataBindingUtil.inflate<FragmentMainBinding>(
          inflater, R.layout.fragment_main, container, false
       )
+
+      activity?.title = "Breve"
 
       /*SAFE-ARGS:
       * dummyEmail is the String data we send to LoginFragment for it to use as default in its EditText(email)
@@ -53,4 +56,8 @@ class MainFragment : Fragment() {
       return binding.root // Fragments MUST return this.
    } // End onCreateView
 
+   // Set the App Bar title
+//   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//      (activity as AppCompatActivity).supportActionBar?.title = "Breve"
+//   }
 }

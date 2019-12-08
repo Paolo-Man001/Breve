@@ -1,15 +1,20 @@
 package com.paomanz.breve.view
 
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.view.*
+import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.onNavDestinationSelected
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.FragmentAccountHomeBinding
+import kotlinx.android.synthetic.main.activity_account.*
 
 /**
  * A simple [Fragment] subclass.
@@ -25,25 +30,18 @@ class AccountHomeFragment : Fragment() {
          inflater, R.layout.fragment_account_home, container, false
       )
 
-      binding.apply {
-         btnAccProfile.setOnClickListener {
-            findNavController().navigate(R.id.action_accountHome_to_accountProfile)
-         }
-
-         btnAccPosts.setOnClickListener {
-            findNavController().navigate(R.id.action_accountHome_to_accountPosts)
-         }
-
-         btnAccCompose.setOnClickListener {
-            findNavController().navigate(R.id.action_accountHome_to_accountCompose)
-         }
-      }
 
       /** Options Menu */
       setHasOptionsMenu(true)
 
+
       return binding.root
    }
+
+   // Set the App Bar title
+//   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//      (activity as AppCompatActivity).supportActionBar?.title = "Home"
+//   }
 
    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
       super.onCreateOptionsMenu(menu, inflater)
@@ -56,6 +54,4 @@ class AccountHomeFragment : Fragment() {
          view!!.findNavController()
       ) || super.onOptionsItemSelected(item)
    }
-
-
 }

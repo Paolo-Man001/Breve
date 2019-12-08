@@ -52,6 +52,9 @@ dependencies {
     def lifecycle_version = "2.1.0"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 
+    // CircleImageView - hdodenhof
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
     // Testing
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'

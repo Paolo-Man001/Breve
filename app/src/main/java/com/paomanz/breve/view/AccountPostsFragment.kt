@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.paomanz.breve.R
 import com.paomanz.breve.databinding.FragmentAccountPostsBinding
@@ -26,6 +27,5 @@ class AccountPostsFragment : Fragment() {
 
         return binding.root
     }
-
 
 }
