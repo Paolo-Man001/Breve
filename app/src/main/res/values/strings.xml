@@ -18,4 +18,6 @@
     <string name="header_compose">Compose</string>
     <string name="header_user_home">Home</string>
     <string name="header_profile">Profile</string>
+    <string name="hint_user_name">User Name</string>
+    <string name="header_account_setting">Account Setting</string>
 </resources>

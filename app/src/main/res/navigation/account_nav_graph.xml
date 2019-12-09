@@ -30,6 +30,9 @@
             app:destination="@id/aboutFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_accountHome_to_accountSetting"
+            app:destination="@id/accountSettingFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountProfileFragment"
@@ -51,4 +54,9 @@
         android:name="com.paomanz.breve.view.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/accountSettingFragment"
+        android:name="com.paomanz.breve.AccountSettingFragment"
+        android:label="Account Setting"
+        tools:layout="@layout/fragment_account_setting" />
 </navigation>
